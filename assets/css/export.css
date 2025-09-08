@@ -1,0 +1,87 @@
+/* export.css - PDF-ready */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "TH Sarabun New", Arial, sans-serif;
+    font-size: 10pt; /* ฟอนต์เล็กลงสำหรับ PDF */
+    color: #000;
+    background: #fff;
+}
+
+.sidebar,
+.header,
+.footer,
+.sdt-btn-print {
+    display: none !important; /* ซ่อนส่วนที่ไม่ต้องการใน PDF */
+}
+
+.col-detail {
+    display: none !important; /* ซ่อนปุ่มรายละเอียด */
+}
+
+.card-form {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: none;
+    background: #fff;
+}
+
+.head-his {
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.personal-info {
+    margin-top: 5px;
+}
+
+.info-item {
+    margin-bottom: 4px;
+    font-size: 9pt;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 9pt;
+}
+
+th {
+    background: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+    padding: 4px;
+    border: 1px solid #ddd;
+    font-size: 9pt;
+}
+
+td {
+    padding: 4px;
+    border: 1px solid #ddd;
+    font-size: 9pt;
+}
+
+.status-box {
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 8pt;
+    text-align: center;
+}
+
+/* ตัวอย่างสีตามสถานะ */
+.status-box.approved { background-color: #d4edda; color: #155724; }
+.status-box.pending { background-color: #fff3cd; color: #856404; }
+.status-box.rejected { background-color: #f8d7da; color: #721c24; }
+
+h1, h2, h3 {
+    font-weight: bold;
+    font-size: 14pt;
+    text-align: center;
+    margin-bottom: 10px;
+}
